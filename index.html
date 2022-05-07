@@ -17,14 +17,11 @@
 			<h1>OTP Authentication using Firebase</h1><br>
 			<div id="recaptcha-container"></div>
 			<div class="mb-3"><label for="number" class="form-label">Phone: </label>
-			<input type="text" name="number" id="number" class="form-control" title="Error Message" pattern="[1-9]{1}[0-9]{9}"></div>
+			<input type="text" name="number" id="number" class="form-control" title="Error Message" pattern="[1-9]{1}[0-9]{9}" placeholder="xxxxx xxxxx"></div>
 			<div class="mb-3"><button type="submit" onclick="phoneAuth()" class="btn btn-primary" id="sign-in-button">Send Code</button></div>
 			<div class="mb-3"><label for="verificationcode" class="form-label">Enter Code: </label>
-			<input type="text" class="form-control" name="verificationcode" id="verificationcode"></div>
+			<input type="text" class="form-control" name="verificationcode" id="verificationcode" placeholder="xxx xxx"></div>
 			<div class="mb-3"><button onclick="codeverify();" class="btn btn-primary">Verify</button></div>
-			
-			
-
 			<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 			<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 			<script src="script.js"></script>
